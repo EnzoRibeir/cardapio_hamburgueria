@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Sigmar", sans-serif;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    background-color: #D38C8D;
+    font-size: 2rem;
+}
+
+#carrocel {
+    display: flex;
+    font-size: 5rem;
+    background-color: #762324;
+    height: 42rem;
+}
+
+#img_hamburger_1 {
+    position:absolute;
+    top: 2rem;
+    left: -9rem;
+    width: 50rem;
+    height: auto;
+}
+
+#img_carrocel {
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#navbar_cardapio {
+    width: 100%;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.432);
+    height: 4rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+#navbar_cardapio_list {
+    display: flex;
+    justify-content: space-around;
+    font-size: 3rem;
+    list-style: none;
+}
+
+#navbar_cardapio_list li:first-child {
+  color: red; /* Altere a cor do texto */
+}
