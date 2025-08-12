@@ -64,16 +64,17 @@ body {
     font-size: 2rem;
 }
 
-.container_mais_pedidos h1 {
+#container_produtos h1 {
     font-size: 3rem;
 }
 
-.container_mais_pedidos_lista {
+.container_cards_lista {
     margin-top: 2rem
 }
 
-.container_mais_pedidos_lista{
+.container_cards_lista{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     justify-content: space-around;
 
@@ -92,4 +93,9 @@ body {
     border-radius: 1rem;
     padding-left:1rem;
     line-height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.container_produtos_sanduiches {
+    margin-top: 6rem;
 }
