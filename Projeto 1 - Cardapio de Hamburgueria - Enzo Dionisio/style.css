@@ -4,6 +4,11 @@
     font-family: "Sigmar", sans-serif;
 }
 
+body {
+    background-color: #eeeeee;
+    height: 1000vh;
+}
+
 .head {
     display: flex;
     justify-content: center;
@@ -35,7 +40,6 @@
 
 #navbar_cardapio {
     width: 100%;
-    background-color: #ffffff;
     color: rgba(0, 0, 0, 0.432);
     height: 4rem;
     align-items: center;
@@ -51,4 +55,41 @@
 
 #navbar_cardapio_list li:first-child {
   color: red; /* Altere a cor do texto */
+}
+
+#container_produtos {
+    margin-top: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+.container_mais_pedidos h1 {
+    font-size: 3rem;
+}
+
+.container_mais_pedidos_lista {
+    margin-top: 2rem
+}
+
+.container_mais_pedidos_lista{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+
+}
+
+.card_prod {
+    background-color: #D38C8D;
+    width: 27rem;
+    height: 20rem;
+    border-radius: 1rem;
+}
+
+.card_nome {
+    background-color: #fff;
+    height: 4rem;
+    border-radius: 1rem;
+    padding-left:1rem;
+    line-height: 4rem;
 }
