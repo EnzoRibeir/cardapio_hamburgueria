@@ -53,8 +53,13 @@ body {
     list-style: none;
 }
 
-#navbar_cardapio_list li:first-child {
-  color: red; /* Altere a cor do texto */
+#navbar_cardapio_list li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#navbar_cardapio_list li.ativo {
+    color: red;
 }
 
 #container_produtos {
@@ -77,14 +82,23 @@ body {
     flex-wrap: wrap;
     list-style: none;
     justify-content: space-around;
+    
 
 }
 
 .card_prod {
+    display: flex;
     background-color: #D38C8D;
     width: 27rem;
     height: 20rem;
     border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_prod img{
+    width: auto;
+    height: 100%;
 }
 
 .card_nome {
