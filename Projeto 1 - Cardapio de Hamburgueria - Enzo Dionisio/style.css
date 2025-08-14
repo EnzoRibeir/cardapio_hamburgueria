@@ -4,6 +4,14 @@
     font-family: "Sigmar", sans-serif;
 }
 
+.linha {
+    border: none;
+    height: 4px;
+    background: #ffffff5b;
+    border-radius: 2px;
+    width: 100%;
+}
+    
 body {
     background-color: #eeeeee;
     height: 1000vh;
@@ -12,7 +20,7 @@ body {
 .head {
     display: flex;
     justify-content: center;
-    gap: 10rem;
+    gap: 12vh;
     background-color: #D38C8D;
     font-size: 2rem;
 }
@@ -21,14 +29,14 @@ body {
     display: flex;
     font-size: 5rem;
     background-color: #762324;
-    height: 42rem;
+    height: 75vh;
 }
 
 #img_hamburger_1 {
     position:absolute;
-    top: 2rem;
-    left: -9rem;
-    width: 50rem;
+    top: 2vh;
+    left: -15vh;
+    width: 87vh;
     height: auto;
 }
 
@@ -41,9 +49,9 @@ body {
 #navbar_cardapio {
     width: 100%;
     color: rgba(0, 0, 0, 0.432);
-    height: 4rem;
+    height: 5vh;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 7vh;
 }
 
 #navbar_cardapio_list {
@@ -89,8 +97,8 @@ body {
 .card_prod {
     display: flex;
     background-color: #D38C8D;
-    width: 27rem;
-    height: 20rem;
+    width: 46vh;
+    height: 38vh;
     border-radius: 1rem;
     justify-content: center;
     align-items: center;
@@ -110,6 +118,49 @@ body {
     margin-bottom: 2rem;
 }
 
-.container_produtos_sanduiches {
-    margin-top: 6rem;
+.container_produtos_lista {
+    margin-bottom: 6rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #762324;
+    height: 50vh;
+    font-size: 2rem;
+    margin-top: 30vh;
+    text-align: center;
+}
+
+.footer img{
+    position: relative;
+    height: auto;
+    width: 35vh;
+    top: -15vh;
+}
+
+.footer_top {
+    height: 50%;
+}
+
+.footer_top p {
+    color: rgba(0, 0, 0, 0.37);
+    position: relative;
+    top: -14vh;
+}
+
+.footer_bottom {
+    height: 50%;
+}
+
+.footer_bottom p {
+    margin-top: 2rem;
+}
+
+.footer_redes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }

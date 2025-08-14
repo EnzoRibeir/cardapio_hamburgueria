@@ -20,6 +20,17 @@ const sanduiches_carne = [
     { nome: "Chicken Burger", img: "resources/hambuguer_2.png" }
 ];   
 
+const sanduiches_frango = [
+    { nome: "Cheeseburger", img: "resources/hambuguer_2.png" },
+    { nome: "X-Bacon", img: "resources/hambuguer_2.png" },
+    { nome: "Veggie Burger", img: "resources/hambuguer_2.png" },
+    { nome: "Chicken Burger", img: "resources/hambuguer_2.png" },
+    { nome: "Cheeseburger", img: "resources/hambuguer_2.png" },
+    { nome: "X-Bacon", img: "resources/hambuguer_2.png" },
+    { nome: "Veggie Burger", img: "resources/hambuguer_2.png" },
+    { nome: "Chicken Burger", img: "resources/hambuguer_2.png" }
+];
+
 // Função para renderizar os cards dinamicamente
 function renderizarCards(lista, idElemento) {
     document.getElementById(idElemento).innerHTML = lista.map(item => `
@@ -52,4 +63,5 @@ document.addEventListener('DOMContentLoaded', function() {
 ativarMenu('#navbar_cardapio_list li');
 renderizarCards(mais_pedidos, 'mais_pedidos_id');
 renderizarCards(sanduiches_carne, 'sanduiches_carne_id');
+renderizarCards(sanduiches_frango, 'sanduiches_frango_id');
 });
