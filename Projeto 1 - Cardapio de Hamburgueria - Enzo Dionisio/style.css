@@ -1,3 +1,5 @@
+
+/* ESTILOS GERAIS */
 * {
     padding: 0;
     margin: 0;
@@ -14,9 +16,13 @@
     
 body {
     background-color: #eeeeee;
-    height: 1000vh;
 }
 
+#container_main_home {
+    background-color: #D38C8D;
+}
+
+/* ESTILOS DO CABEÇALHO/HEAD */
 .head {
     display: flex;
     justify-content: center;
@@ -25,14 +31,32 @@ body {
     font-size: 2rem;
 }
 
-#carrocel {
+/* ESTILOS DO CARROCEL */
+.carrocel {
     display: flex;
     font-size: 5rem;
-    background-color: #762324;
-    height: 75vh;
 }
 
-#img_hamburger_1 {
+.carrocel img {
+    width: 100%;
+    height: auto;
+}
+
+#carrocel_cardapio {
+    width: 100%;
+    background-color: #762324;
+    height: 76vh;
+}
+
+.carrocel_home_top {
+    background-color: #D38C8D;
+}
+
+.carrocel_home_top img {
+    margin-top: 5rem;
+}
+
+#carrocel_cardapio #img_hamburger_1 {
     position:absolute;
     top: 2vh;
     left: -15vh;
@@ -46,6 +70,7 @@ body {
     height: 100%;
 }
 
+/* ESTILOS DO NAVBAR */
 #navbar_cardapio {
     width: 100%;
     color: rgba(0, 0, 0, 0.432);
@@ -70,8 +95,9 @@ body {
     color: red;
 }
 
+/* ESTILOS DO CONTAINER DE PRODUTOS */
 #container_produtos {
-    margin-top: 4rem;
+    margin-top: 6rem;
     margin-left: 1rem;
     margin-right: 1rem;
     font-size: 2rem;
@@ -97,8 +123,8 @@ body {
 .card_prod {
     display: flex;
     background-color: #D38C8D;
-    width: 46vh;
-    height: 38vh;
+    width: 52vh;
+    height: 44vh;
     border-radius: 1rem;
     justify-content: center;
     align-items: center;
@@ -122,6 +148,7 @@ body {
     margin-bottom: 6rem;
 }
 
+/* ESTILOS DO FOOTER */
 .footer {
     display: flex;
     flex-direction: column;
@@ -129,12 +156,12 @@ body {
     justify-content: center;
     background-color: #762324;
     height: 50vh;
-    font-size: 2rem;
-    margin-top: 30vh;
+    font-size: 1.5rem;
+    margin-top: 20vh;
     text-align: center;
 }
 
-.footer img{
+.footer_top img{
     position: relative;
     height: auto;
     width: 35vh;
@@ -148,19 +175,31 @@ body {
 .footer_top p {
     color: rgba(0, 0, 0, 0.37);
     position: relative;
-    top: -14vh;
+    top: -16vh;
 }
 
 .footer_bottom {
+    display: flex;
+    flex-direction: column;
     height: 50%;
 }
 
 .footer_bottom p {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .footer_redes {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
 }
+
+.footer_redes img {
+    margin-top: 1rem;
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* HOME */
