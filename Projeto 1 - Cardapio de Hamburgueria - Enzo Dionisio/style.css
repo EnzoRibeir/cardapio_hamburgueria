@@ -1,5 +1,5 @@
 
-/* ESTILOS GERAIS */
+/* ESTILOS: GERAL */
 * {
     padding: 0;
     margin: 0;
@@ -22,7 +22,7 @@ body {
     background-color: #D38C8D;
 }
 
-/* ESTILOS DO CABEÇALHO/HEAD */
+/* ESTILOS DO CABEÇALHO/HEAD (GERAL) */
 .head {
     display: flex;
     justify-content: center;
@@ -31,124 +31,7 @@ body {
     font-size: 2rem;
 }
 
-/* ESTILOS DO CARROCEL */
-.carrocel {
-    display: flex;
-    font-size: 5rem;
-}
-
-.carrocel img {
-    width: 100%;
-    height: auto;
-}
-
-#carrocel_cardapio {
-    width: 100%;
-    background-color: #762324;
-    height: 76vh;
-}
-
-.carrocel_home_top {
-    background-color: #D38C8D;
-}
-
-.carrocel_home_top img {
-    margin-top: 5rem;
-}
-
-#carrocel_cardapio #img_hamburger_1 {
-    position:absolute;
-    top: 2vh;
-    left: -15vh;
-    width: 87vh;
-    height: auto;
-}
-
-#img_carrocel {
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* ESTILOS DO NAVBAR */
-#navbar_cardapio {
-    width: 100%;
-    color: rgba(0, 0, 0, 0.432);
-    height: 5vh;
-    align-items: center;
-    margin-top: 7vh;
-}
-
-#navbar_cardapio_list {
-    display: flex;
-    justify-content: space-around;
-    font-size: 3rem;
-    list-style: none;
-}
-
-#navbar_cardapio_list li {
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-#navbar_cardapio_list li.ativo {
-    color: red;
-}
-
-/* ESTILOS DO CONTAINER DE PRODUTOS */
-#container_produtos {
-    margin-top: 6rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-size: 2rem;
-}
-
-#container_produtos h1 {
-    font-size: 3rem;
-}
-
-.container_cards_lista {
-    margin-top: 2rem
-}
-
-.container_cards_lista{
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: space-around;
-    
-
-}
-
-.card_prod {
-    display: flex;
-    background-color: #D38C8D;
-    width: 52vh;
-    height: 44vh;
-    border-radius: 1rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.card_prod img{
-    width: auto;
-    height: 100%;
-}
-
-.card_nome {
-    background-color: #fff;
-    height: 4rem;
-    border-radius: 1rem;
-    padding-left:1rem;
-    line-height: 4rem;
-    margin-bottom: 2rem;
-}
-
-.container_produtos_lista {
-    margin-bottom: 6rem;
-}
-
-/* ESTILOS DO FOOTER */
+/* ESTILOS DO FOOTER (GERAL) */
 .footer {
     display: flex;
     flex-direction: column;
@@ -202,4 +85,129 @@ body {
     cursor: pointer;
 }
 
+
+/* ESTILOS: CARDAPIO */
+
+/* ESTILOS DO CARROCEL (CARDAPIO)*/
+.carrocel {
+    display: flex;
+    font-size: 5rem;
+}
+
+.carrocel img {
+    width: 100%;
+    height: auto;
+}
+
+#carrocel_cardapio {
+    width: 100%;
+    background-color: #762324;
+    height: 76vh;
+}
+
+.carrocel_home_top {
+    background-color: #D38C8D;
+}
+
+.carrocel_home_top img {
+    margin-top: 5rem;
+}
+
+#carrocel_cardapio #img_hamburger_1 {
+    position:absolute;
+    top: 2vh;
+    left: -15vh;
+    width: 87vh;
+    height: auto;
+}
+
+#img_carrocel {
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ESTILOS DO NAVBAR (CARDAPIO) */
+#navbar_cardapio {
+    width: 100%;
+    color: rgba(0, 0, 0, 0.432);
+    height: 5vh;
+    align-items: center;
+    margin-top: 7vh;
+}
+
+#navbar_cardapio_list {
+    display: flex;
+    justify-content: space-around;
+    font-size: 3rem;
+    list-style: none;
+}
+
+#navbar_cardapio_list li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#navbar_cardapio_list li.ativo {
+    color: red;
+}
+
+/* ESTILOS DO CONTAINER DE PRODUTOS (CARDAPIO) */
+#container_produtos {
+    margin-top: 6rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+#container_produtos h1 {
+    font-size: 3rem;
+}
+
+.container_cards_lista {
+    margin-top: 2rem
+}
+
+.container_cards_lista{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    
+
+}
+
+.card_prod {
+    display: flex;
+    background-color: #D38C8D;
+    width: 52vh;
+    height: 44vh;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_prod img{
+    width: auto;
+    height: 100%;
+}
+
+.card_nome {
+    background-color: #fff;
+    height: 4rem;
+    border-radius: 1rem;
+    padding-left:1rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.container_produtos_lista {
+    margin-bottom: 6rem;
+}
+
+
+
 /* HOME */
+
+
+
