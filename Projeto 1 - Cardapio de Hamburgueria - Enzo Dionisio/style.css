@@ -206,6 +206,88 @@ body {
 }
 
 
+/* ESTILOS CARDAPIO PHONE */
+/* RESPONSIVIDADE PARA CELULAR */
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    .head_item_inicio, .head_item_promocao {
+        display: none;
+    }
+
+    #carrocel_cardapio {
+        height: auto;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center; /* centraliza horizontalmente */
+        align-items: center;     /* centraliza verticalmente (opcional) */
+        flex-direction: column;  /* empilha os itens verticalmente */  
+    }
+
+    #carrocel_cardapio #img_hamburger_1 {
+        display: none;
+    }
+
+    #img_carrocel {
+        margin-left:-5rem ;
+        width: 150vw;   
+        height: auto;
+    }
+
+    .container_cards_lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_prod {
+        width: 90vw;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .card_prod img {
+        height: auto;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .card_nome {
+        font-size: 1.2rem;
+        width: 90vw;
+        text-align: center;
+    }
+
+    .footer {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .footer_top img {
+        width: 50vw;
+        top: 0;
+    }
+
+    .footer_top p {
+        top: 0;
+        font-size: 1rem;
+    }
+
+    .footer_redes {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer_redes img {
+        width: 40px;
+    }
+}
+
 
 /* HOME */
 
