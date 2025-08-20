@@ -22,6 +22,10 @@ body {
     background-color: #D38C8D;
 }
 
+.material-symbols-outlined {
+    cursor: pointer;
+}
+
 /* ESTILOS DO CABEÇALHO/HEAD (GERAL) */
 .head {
     display: flex;
@@ -103,14 +107,6 @@ body {
     width: 100%;
     background-color: #762324;
     height: 76vh;
-}
-
-.carrocel_home_top {
-    background-color: #D38C8D;
-}
-
-.carrocel_home_top img {
-    margin-top: 5rem;
 }
 
 #carrocel_cardapio #img_hamburger_1 {
@@ -205,6 +201,140 @@ body {
     margin-bottom: 6rem;
 }
 
+/* ESTILOS DO CARROCEL (home)*/
+.carrocel_home_top {
+    background-color: #D38C8D;
+}
+
+.carrocel_home_top img {
+    margin-top: 5rem;
+}
+
+/* ESTILOS INFO PRODUTOS*/
+
+/* ESTILOS CONTAINER TOP (INFO PRODUTOS)*/
+.info_produto_container_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D38C8D;
+}
+
+.info_produto_nome_e_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
+}
+
+.info_produto_nome {
+    display: flex;
+    flex-direction: column;
+    width: 120vh;
+    margin-top: 3rem;
+}
+
+.info_produto_nome h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    color: black;
+    line-height: 5rem;
+}
+
+.info_produto_nome p {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.32);
+}
+
+.info_produto_img {
+    width: 90vh;
+    height: auto;
+}
+
+.info_produto_img img{
+    width: 100%;
+    height: auto;
+}
+
+.info_produto_preco {
+    margin-bottom: 1rem;
+    margin-left: 6rem;
+}
+
+.info_produto_preco_anterior {
+    color: rgba(0, 0, 0, 0.32);
+    text-decoration: line-through;
+    font-size: 2rem;
+    margin-bottom: -2.5rem;
+}
+
+.info_produto_por {
+    position: relative;
+    rotate: 20deg;
+    right: 3rem;
+    font-size: 1.5rem;
+    width: 3rem;
+    top: 0.6rem;
+
+}
+
+.info_produto_preco_atual {
+    font-size: 5rem;
+    color: rgb(29, 109, 29);
+    margin-top: -1.8rem;
+}
+
+
+
+/* ESTILOS CONTAINER BOTTOM(INFO PRODUTOS)*/
+.info_produto_container_bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.info_produto_container_bottom h2{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.info_produto_tabela_nutricional {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 70%;
+    font-size: 1rem;
+    background-color: #d38c8d9c;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.info_produto_ingredientes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    width: 70%;
+    font-size: 1rem;
+    background-color: #d38c8d9c;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* ESTILOS (INFO PRODUTOS)*/
+
+
+
+
+
+
+
+
+
 
 /* ESTILOS CARDAPIO PHONE */
 /* RESPONSIVIDADE PARA CELULAR */
@@ -288,8 +418,6 @@ body {
     }
 }
 
-
-/* HOME */
 
 
 
