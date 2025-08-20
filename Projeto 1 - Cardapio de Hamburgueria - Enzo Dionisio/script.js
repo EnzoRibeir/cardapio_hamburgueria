@@ -34,7 +34,22 @@ const sanduiches_frango = [
 // Função para renderizar os cards dinamicamente
 function renderizarCards(lista, idElemento) {
     document.getElementById(idElemento).innerHTML = lista.map(item => `
-        <li>
+        <li data-destino="info_produto.html" id="${item.nome.replace(/\s+/g, '_').toLowerCase()}">
+            <div class="card">
+                <div class="card_prod">
+                    <img src="${item.img}" alt="${item.nome}">
+                </div>
+                <div class="card_nome">
+                    <p>${item.nome}</p>
+                </div>
+            </div>
+        </li>
+`).join('');
+}
+
+function renderizarInfoProduto(lista, idElemento) {
+    document.getElementById(idElemento).innerHTML = lista.map(item => `
+        <li data-destino="info_produto.html" >
             <div class="card">
                 <div class="card_prod">
                     <img src="${item.img}" alt="${item.nome}">
@@ -58,10 +73,24 @@ function ativarMenu(navbarSelector, classeAtiva = 'ativo') {
     });
 }
 
+
+// Função genérica para ativar redirecionamentos via data-destino
+function ativarRedirecionamentos() {
+    document.querySelectorAll("[data-destino]").forEach(el => {
+        el.addEventListener("click", () => {
+            window.location.href = el.dataset.destino;
+        });
+    });
+}
+
+
 // rodando as funções do site
 document.addEventListener('DOMContentLoaded', function() {
+ativarRedirecionamentos();
 ativarMenu('#navbar_cardapio_list li');
 renderizarCards(mais_pedidos, 'mais_pedidos_id');
 renderizarCards(sanduiches_carne, 'sanduiches_carne_id');
 renderizarCards(sanduiches_frango, 'sanduiches_frango_id');
+ativarRedirecionamentos();
 });
+

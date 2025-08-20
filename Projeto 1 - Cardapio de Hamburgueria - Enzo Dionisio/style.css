@@ -26,6 +26,11 @@ body {
     cursor: pointer;
 }
 
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
 /* ESTILOS DO CABEÇALHO/HEAD (GERAL) */
 .head {
     display: flex;
@@ -33,6 +38,8 @@ body {
     gap: 12vh;
     background-color: #D38C8D;
     font-size: 2rem;
+    width: 100%;
+    text-align: center;
 }
 
 /* ESTILOS DO FOOTER (GERAL) */
