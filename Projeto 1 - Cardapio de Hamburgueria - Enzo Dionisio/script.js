@@ -34,7 +34,7 @@ const sanduiches_frango = [
 // Função para renderizar os cards dinamicamente
 function renderizarCards(lista, idElemento) {
     document.getElementById(idElemento).innerHTML = lista.map(item => `
-        <li data-destino="info_produto.html" id="${item.nome.replace(/\s+/g, '_').toLowerCase()}">
+        <li class = "card_li" data-destino="info_produto.html" id="${item.nome.replace(/\s+/g, '_').toLowerCase()}">
             <div class="card">
                 <div class="card_prod">
                     <img src="${item.img}" alt="${item.nome}">

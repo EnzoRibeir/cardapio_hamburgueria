@@ -13,6 +13,14 @@
     border-radius: 2px;
     width: 100%;
 }
+
+.linha_info_produto {
+    border: none;
+    height: 0.5px;
+    background: rgba(0, 0, 0, 0.74);
+    border-radius: 2px;
+    width: 100%;
+}
     
 body {
     background-color: #eeeeee;
@@ -31,6 +39,10 @@ li {
     cursor: pointer;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* ESTILOS DO CABEÇALHO/HEAD (GERAL) */
 .head {
     display: flex;
@@ -40,6 +52,11 @@ li {
     font-size: 2rem;
     width: 100%;
     text-align: center;
+}
+
+.head li:hover{
+    transform: scale(1.2);
+    color: #762324;
 }
 
 /* ESTILOS DO FOOTER (GERAL) */
@@ -151,9 +168,17 @@ li {
     transition: color 0.3s ease;
 }
 
+#navbar_cardapio_list li:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+    color: rgba(255, 0, 0, 0.5);
+}
+
 #navbar_cardapio_list li.ativo {
     color: red;
 }
+
+ac
 
 /* ESTILOS DO CONTAINER DE PRODUTOS (CARDAPIO) */
 #container_produtos {
@@ -179,16 +204,22 @@ li {
     
 
 }
+.card_li:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}
 
 .card_prod {
     display: flex;
     background-color: #D38C8D;
-    width: 52vh;
-    height: 44vh;
+    width: 44vh;
+    height: 42vh;
     border-radius: 1rem;
     justify-content: center;
     align-items: center;
 }
+
+
 
 .card_prod img{
     width: auto;
@@ -244,7 +275,7 @@ li {
 }
 
 .info_produto_nome h1 {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     margin-bottom: 1rem;
     color: black;
     line-height: 5rem;
@@ -322,6 +353,7 @@ li {
 }
 
 .info_produto_ingredientes {
+    display: none;
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
@@ -330,7 +362,69 @@ li {
     background-color: #d38c8d9c;
     padding: 1rem;
     border-radius: 1rem;
+    margin-top: 2rem;
 }
+
+.btn_ingredientes_div {
+    width: 100%;
+}
+
+.btn_ingredientes_div input {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+    opacity: 0;
+    z-index: -1;
+
+}
+
+.btn_ingredientes_div label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+
+.tab__content li{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.btn_ingredientes_div input:checked ~ .tab__content {
+  max-height: 20rem;
+}
+
+.btn_tabela_nutricional_div {
+    width: 100%;
+}
+
+.btn_tabela_nutricional_div input {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+    opacity: 0;
+    z-index: -1;
+
+}
+
+.btn_tabela_nutricional_div label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_tabela_nutricional_div input:checked ~ .tab__content {
+  max-height: 20rem;
+}
+
+
 
 /* ESTILOS (INFO PRODUTOS)*/
 
